@@ -38,3 +38,6 @@ RUN \
 		"${DOCKER_URL}/${DOCKER_CHANNEL}/${DOCKER_ARCH}/docker-${DOCKER_VERSION}.tgz"; \
 	tar xf docker.tar.gz --strip-components 1 -C /usr/local/bin; \
 	rm -f docker.tgz;
+
+# Set Docker daemon host
+ENV DOCKER_HOST="tcp://daemon:2375"
