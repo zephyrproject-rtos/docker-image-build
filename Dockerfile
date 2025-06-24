@@ -1,4 +1,4 @@
-FROM quay.io/buildah/stable:v1.35.0
+FROM quay.io/buildah/stable:v1.40.1
 
 # Install Podman.
 RUN dnf -y install podman
